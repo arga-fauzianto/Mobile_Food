@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#8D92A3"
+    tools:context=".menu_login.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:backgroundTint="#8D92A3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="#8D92A3"
+                >
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp">
+
+                    <com.google.android.material.appbar.MaterialToolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="30dp"
+                        android:paddingLeft="24dp"
+                        android:paddingBottom="24dp"
+                        android:background="#FFFFFF"
+                        app:title="Sign In"
+                        app:subtitleTextColor="#8D92A3"
+                        app:subtitle="Find Your best meal"
+                        app:titleTextColor="#020202" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="34dp"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="26dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email Address"
+                            android:textColor="#020202"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/username"
+                            android:layout_marginTop="6dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView"
+                            android:layout_centerHorizontal="true"
+
+                            app:boxCornerRadiusBottomEnd="8dp"
+                            app:boxCornerRadiusBottomStart="8dp"
+                            app:boxCornerRadiusTopEnd="8dp"
+                            app:boxCornerRadiusTopStart="8dp"
+                            app:boxStrokeColor="#FFC700">
+
+
+                            <EditText
+                                android:id="@+id/nikbaru"
+                                android:layout_width="match_parent"
+                                android:layout_height="42dp"
+                                android:hint="Type your email address"
+                                android:inputType="textEmailAddress"
+                                android:singleLine="true"
+                                android:textColor="#8D92A3"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                                tools:layout_editor_absoluteX="41dp"
+                                tools:layout_editor_absoluteY="442dp" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="16dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Password"
+                            android:textColor="#020202"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/password"
+                            android:layout_marginTop="6dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView"
+
+                            app:boxCornerRadiusBottomEnd="8dp"
+                            app:boxCornerRadiusBottomStart="8dp"
+                            app:boxCornerRadiusTopEnd="8dp"
+                            app:boxCornerRadiusTopStart="8dp"
+                            app:boxStrokeColor="#FFC700">
+
+
+                            <EditText
+                                android:id="@+id/password"
+                                android:layout_width="match_parent"
+                                android:layout_height="42dp"
+                                android:hint="Type your password"
+                                android:inputType="textEmailAddress"
+                                android:singleLine="true"
+                                android:textColor="#8D92A3"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                tools:ignore="DuplicateIds,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                                tools:layout_editor_absoluteX="41dp"
+                                tools:layout_editor_absoluteY="442dp" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/password"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <Button
+                            android:id="@+id/signin"
+                            android:layout_width="312dp"
+                            android:layout_height="45dp"
+                            android:layout_below="@+id/password"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/rounded_corner"
+
+
+                            android:backgroundTint="#FFC700"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Sign In"
+                            android:textAllCaps="false"
+                            android:textColor="#020202"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.511"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintVertical_bias="0.943"
+                            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/newacount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/password"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <Button
+                            android:onClick="register"
+                            android:id="@+id/btn_newacount"
+                            android:layout_width="312dp"
+                            android:layout_height="45dp"
+                            android:layout_below="@+id/password"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/rounded_corner"
+
+
+                            android:backgroundTint="#8D92A3"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Cretae new acount"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.511"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintVertical_bias="0.943"
+                            tools:ignore="DuplicateIds,TextSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
